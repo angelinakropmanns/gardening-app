@@ -1,0 +1,38 @@
+const home = document.querySelector('.home')
+const create = document.querySelector('.create')
+const profile = document.querySelector('.profile')
+const settings = document.querySelector('.settings')
+
+const homeBtn = document.querySelector('.home-btn')
+const createBtn = document.querySelector('.create-btn')
+const profileBtn = document.querySelector('.profile-btn')
+const settingsBtn = document.querySelector('.settings-btn')
+
+homeBtn.addEventListener('click', (event) => {
+  event.preventDefault()
+  home.classList.remove('hidden')
+  create.classList.add('hidden')
+  profile.classList.add('hidden')
+  settings.classList.add('hidden')
+})
+createBtn.addEventListener('click', (event) => {
+  event.preventDefault()
+  home.classList.add('hidden')
+  create.classList.remove('hidden')
+  profile.classList.add('hidden')
+  settings.classList.add('hidden')
+})
+profileBtn.addEventListener('click', (event) => {
+  event.preventDefault()
+  home.classList.add('hidden')
+  create.classList.add('hidden')
+  profile.classList.remove('hidden')
+  settings.classList.add('hidden')
+})
+settingsBtn.addEventListener('click', (event) => {
+  event.preventDefault()
+  home.classList.add('hidden')
+  create.classList.add('hidden')
+  profile.classList.add('hidden')
+  settings.classList.remove('hidden')
+})

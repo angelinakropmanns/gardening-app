@@ -1,0 +1,73 @@
+.buttons {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.buttons__toggle label {
+  position: relative;
+  display: inline-block;
+  height: 3.5em;
+  margin: 10px;
+}
+
+.buttons__toggle input {
+  display: none;
+}
+
+.buttons__toggle .buttons__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 1.5em;
+  left: 2em;
+  width: 4em;
+  height: 2em;
+  background-color: rgb(183, 236, 183);
+  transition: all 0.3s ease-in-out;
+  border-radius: 1em;
+}
+
+.buttons__toggle .buttons__slider::before {
+  position: absolute;
+  content: '';
+  height: 1.6em;
+  width: 1.6em;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons__toggle input:checked + .buttons__slider {
+  background-color: grey;
+}
+
+.buttons__toggle input:focus + .buttons__slider {
+  background-color: white;
+  box-shadow: 0 0 1px grey;
+}
+
+.buttons__toggle input:checked + .buttons__slider::before {
+  -webkit-transform: translateX(1.9em);
+  -ms-transform: translateX(1.9em);
+  transform: translateX(1.9em);
+}
+
+.button__text.buttons__slider::after {
+  position: absolute;
+  content: 'AUS';
+  color: black;
+  font-weight: bold;
+  height: 1.6em;
+  left: -2.5em;
+  bottom: 0.2em;
+}
+
+.button__text input:checked + .buttons__slider::after {
+  position: absolute;
+  content: 'AN';
+  color: grey;
+  left: 4.5em;
+}

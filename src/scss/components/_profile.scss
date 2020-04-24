@@ -1,0 +1,44 @@
+.profile__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.profile__head {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile__name {
+  display: flex;
+  align-items: center;
+  right: 50px;
+  left: 50px;
+  top: 75px;
+}
+
+.profile__skills {
+  margin: 10px;
+  text-align: center;
+}
+
+.profile__text {
+  text-align: center;
+  padding: 1em;
+}
+
+.profile__container {
+  list-style: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.profile__container--box {
+  border: 2px solid rgb(135, 180, 135);
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 1px lightgrey;
+}

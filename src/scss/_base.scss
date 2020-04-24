@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 48px;
+  background: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background: rgb(135, 180, 135);
+  color: white;
+}
+
+main {
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(135, 180, 135);
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 48px auto;
+  overflow: scroll;
+}
+
+body.darkmode {
+  background: rgb(24, 24, 24);
+  color: rgb(207, 204, 204);
+
+  header {
+    background: rgb(37, 37, 39);
+    color: rgb(184, 184, 184);
+  }
+
+  footer {
+    background: rgb(37, 37, 39);
+  }
+
+  .card__style {
+    background: rgb(59, 59, 61);
+    color: rgb(207, 204, 204);
+  }
+
+  .card__header {
+    background: rgb(59, 59, 61);
+  }
+
+  .card__bookmark--active {
+    background: rgb(49, 48, 48);
+  }
+
+  .card__delete {
+    background: rgb(49, 48, 48);
+  }
+
+  .form__textfield__field {
+    background: rgb(59, 59, 61);
+  }
+
+  .form__title--field {
+    background: rgb(59, 59, 61);
+  }
+
+  .form__button__styling {
+    background: rgb(59, 59, 61);
+  }
+
+  .profile__container--box {
+    border: 2px solid rgb(59, 59, 61);
+    box-shadow: 2px 2px 1px grey;
+  }
+
+  .buttons__toggle .buttons__slider {
+    background: rgb(59, 59, 61);
+  }
+
+  .btn {
+    background: rgb(37, 37, 39);
+    }
+
+  .active-button {
+    background: hotpink;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.box-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  right: 4px;
+  top: 20px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}

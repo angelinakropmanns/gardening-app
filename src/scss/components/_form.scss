@@ -1,0 +1,59 @@
+.form {
+  margin-top: 20px;
+}
+
+.form__title {
+  width: 350px;
+  margin: 8px;
+}
+
+.form__title--description {
+  margin-top: 10px;
+}
+
+.form__title--field {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form__textfield {
+  width: 350px;
+  margin: 50px 8px;
+}
+
+.form__textfield__field {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.form__checkbox {
+  width: 350px;
+  margin: 8px;
+}
+
+.form__button {
+  text-align: center;
+  margin: 16px 8px;
+}
+
+.form__button__styling {
+  height: 3rem;
+  width: 22rem;
+  font-size: 16px;
+  background: rgb(183, 236, 183);
+
+  &:active {
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.form__link {
+  text-align: center;
+  margin-top: 32px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gardening-App</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script defer src="https://kit.fontawesome.com/8fe048c345.js" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <section class="home grid">
+      <header>
+        <h1>Pflanzen Lexikon</h1>
+      </header>
+      <main data-js="card-container"></main>
+    </section>
+
+    <!--create page-->
+
+    <section class="create grid hidden">
+      <header>
+        <h1>Neue Einträge</h1>
+      </header>
+      <main>
+        <form class="form" method="POST">
+          <section class="form__title">
+            <label class="form__title--description" for="title">Name der neuen Pflanze:</label><br />
+            <input class="form__title--field" type="text" name="title" id="title" autofocusrequired/>
+          </section>
+          <section class="form__textfield">
+            <label for="text">Beschreibung der Pflanze:</label>
+            <textarea class="form__textfield__field" name="text" id="text" cols="30"rows="10"></textarea>
+          </section>
+          <section class="form__checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" required />
+            <label for="checkbox">Ich stimme den Geschäftsbedingungen* zu.</label>
+          </section>
+          <section class="form__button">
+            <button class="form__button__styling">Erstelle den Eintrag</button>
+          </section>
+        </form>
+        <section class="form__link">
+          <a href="">*Geschäftsbedingungen</a>
+        </section>
+      </main>
+    </section>
+
+    <!--profile page-->
+
+    <section class="profile grid hidden">
+      <header>
+        <h1>Profile Page</h1>
+      </header>
+      <main>
+        <section class="profile__wrapper">
+          <section class="profile__head">
+            <img src="images/blank-profile-picture.png" alt="" class="box-img"/>
+            <h2 class="profile__name">Peter <br />Petersen</h2>
+          </section>
+
+          <section>
+            <p class="profile__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              facilis est illum doloremque excepturi magni, odio, eum nisi ipsum
+              cumque perspiciatis! Esse minus exercitationem incidunt dolorum
+              accusantium natus minima tenetur?
+            </p>
+          </section>
+
+          <section class="profile">
+            <h3 class="profile__skills">Skills</h3>
+
+            <ul class="profile__container">
+              <li class="profile__container--box">Rasen mähen</li>
+              <li class="profile__container--box">Rosen zurückschneiden</li>
+              <li class="profile__container--box">Unkraut jäten</li>
+              <li class="profile__container--box">Düngen</li>
+              <li class="profile__container--box">Maulwürfe verscheuchen</li>
+              <li class="profile__container--box">Pflanzen gießen</li>
+              <li class="profile__container--box">Pflanzen aussähen</li>
+              <li class="profile__container--box">Hecken stutzen</li>
+            </ul>
+          </section>
+        </section>
+      </main>
+    </section>
+
+    <!--settings page-->
+
+    <section class="settings grid hidden">
+      <header>
+        <h1>Settings</h1>
+      </header>
+      <main>
+        <section class="buttons">
+          <div class="buttons__toggle button__text">
+            <label>
+              Lorem ipsum dolor sit amet. <input type="checkbox" />
+              <span class="buttons__slider"></span>
+            </label>
+          </div>
+          <div class="buttons__toggle button__text">
+            <label for="slider">
+              Lorem ipsum dolor sit amet. <input type="checkbox" id="slider" />
+              <span class="buttons__slider"></span>
+            </label>
+          </div>
+          <div class="buttons__toggle button__text">
+            <label>
+              Lorem ipsum dolor sit amet. <input type="checkbox" />
+              <span class="buttons__slider"></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="checkbox">
+          <label for="checkbox1" class="checkbox__label1"
+            >Lorem ipsum dolor sit amet consectetur.</label
+          >
+          <input type="checkbox" class="checkbox__checkbox1" id="checkbox1" />
+          <label for="checkbox2" class="checkbox__label2">Lorem, ipsum.</label>
+          <input type="checkbox" class="checkbox__checkbox2" id="checkbox2" />
+          <label for="checkbox3" class="checkbox__label3"
+            >Lorem ipsum dolor sit.</label
+          >
+          <input type="checkbox" class="checkbox__checkbox3" id="checkbox3" />
+        </section>
+      </main>
+    </section>
+    <footer>
+      <nav class="nav">
+        <button class="home-btn btn active">
+          <img src="images/home.png" alt="Home"></img>
+        </button>
+        <button class="create-btn btn">
+          <img src="images/create.png" alt="Create"></img>
+        </button>
+        <button class="profile-btn btn">
+          <img src="images/profile.png" alt="Profile"></img>
+        </button>
+        <button class="settings-btn btn">
+          <img src="images/settings.png" alt="Settings"></img>
+        </button>
+      </nav>
+    </footer>
+  </body>
+</html>

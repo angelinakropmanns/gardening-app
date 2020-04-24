@@ -1,0 +1,52 @@
+.nav {
+  list-style: none;
+  height: 48px;
+}
+
+.home-btn {
+  display: inline-block;
+  background: rgb(135, 180, 135);
+  margin: 0 12px 0 12px;
+  height: 48px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+  border: none;
+}
+
+.create-btn {
+  display: inline-block;
+  background: rgb(135, 180, 135);
+  margin: 0 12px 0 12px;
+  height: 48px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+  border: none;
+}
+
+.profile-btn {
+ display: inline-block;
+ background: rgb(135, 180, 135);
+ margin: 0 12px 0 12px;
+ height: 48px;
+ padding-left: 8px;
+ padding-right: 8px;
+ position: relative;
+ border: none;
+}
+
+.settings-btn {
+  display: inline-block;
+  background: rgb(135, 180, 135);
+  margin: 0 12px 0 12px;
+  height: 48px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+  border: none;
+}
+
+.active {
+  background: rgb(87, 155, 87);
+}
